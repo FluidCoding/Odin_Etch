@@ -1,18 +1,28 @@
+#controls{
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  width: 400px;
+  text-align: center;
+}
+
 #container{
     background-color:grey;
     width: 500px;
-/*    height: 650px;*/
+    height: 500px;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 5px;
+    border: 7px solid #795548;
+    padding:0px;
 }
+
 .b{
     background-color:grey;
     display:inline-block;
-    margin-top:-2px;
-    margin-bottom:-2px;
+    float:left;
 }
-#container{
-    border: 0px;
-    padding:0px;
-    margin:0px;
+
+body{
+  background-color: #b3b3b3;
 }

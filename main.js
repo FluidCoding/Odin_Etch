@@ -15,7 +15,7 @@ $(function(){
         $(".b").height(d);
         $(".b").on("mouseover",(th)=>{
             let cntr = 0
-            let timeD = 100;
+            var timeD = 100;
             let rCol = Math.round(Math.random()*100)
             let rCol2 = Math.round(Math.random()*100)
             let rCol3 = Math.round(Math.random()*100)
@@ -24,8 +24,8 @@ $(function(){
                 timeD = 500;
                 cntr++;
                 rCol-=10;rCol2-=10;rCol3-=10;
-                console.log(rCol)
-                b.attr('style', $(".b").attr('style') + 'background-color:rgb('+rCol+','+rCol2+','+rCol3+');');
+                b.css('background-color', 'rgb('+rCol+','+rCol2+','+rCol3+')');
+                //b.attr('style', $(".b").attr('style') + 'background-color:rgb('+rCol+','+rCol2+','+rCol3+');');
                 if(cntr>15){clearInterval(timey);}
             },timeD);
         });
@@ -51,7 +51,7 @@ $(function(){
         if(s>10){
             create(16*16);
             clearInterval(timey)
-            $(cont).css("margin-left", "0px");
+            $(cont).css("margin-left", "auto");
         }
     },500);
     }
