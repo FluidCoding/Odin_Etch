@@ -25,7 +25,6 @@ $(function(){
                 cntr++;
                 rCol-=10;rCol2-=10;rCol3-=10;
                 b.css('background-color', 'rgb('+rCol+','+rCol2+','+rCol3+')');
-                //b.attr('style', $(".b").attr('style') + 'background-color:rgb('+rCol+','+rCol2+','+rCol3+');');
                 if(cntr>15){clearInterval(timey);}
             },timeD);
         });
