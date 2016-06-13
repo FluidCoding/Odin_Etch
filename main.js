@@ -2,20 +2,7 @@ $(function(){
     $("#newBoard").on('click', initBoard);
     $("#reset").on("click", reset);
     var contain = $("#container")
-    var num = 64;
-    for(var i=0;i<num; i++){
-        contain.append("<div class='b' id='space"+i+"'> </div>");
-    }
-    var d = contain.width()/(Math.sqrt(num));
-    $(".b").width(d);
-    $(".b").height(d);
-    $(".b").on("mouseover",(th)=>{
-        let b = $("#"+th.currentTarget.id);
-        let rCol = Math.round(Math.random()*100)
-        let rCol2 = Math.round(Math.random()*100)
-        let rCol3 = Math.round(Math.random()*100)
-        b.attr('style', $(".b").attr('style') + 'background-color:rgb('+rCol+','+rCol2+','+rCol3+');');
-    });
+    create(16*16);
     function create(x){
         var contain = $("#container")
         $(contain).empty();
